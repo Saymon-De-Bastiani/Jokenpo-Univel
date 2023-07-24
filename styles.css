@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+  --sidebar-width: 6.6em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  background-color: rgb(138, 161, 152);
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+h4{
+  cursor: pointer;
+}
+
+.barra {
+	background-color: #333;
+	position: fixed;
+	transition: width 0.2s ease;
+  height: 100vh;
+	left: 0;
+	width: var(--sidebar-width);
+}
+
+.barra nav {
+	height: 100%;
+}
+
+.barra .barraTudo {
+	display: flex;
+	height: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.barra .barraTudo .barraSimbolo {
+	align-items: center;
+	color: #ffffff;
+	display: flex;
+	padding-left: 20px;
+	text-decoration: none;
+	transition: color 0.2s ease, background-color 0.2s ease;
+  height: 100%;
+	padding: 0.75em;
+}
+
+.barra .barraTudo .barraSimbolo:hover {
+	background-color: rgba(237, 185, 185, 0.534);
+	color: rgb(5, 70, 210);
+}
+
+.barra .barraTudo .barraTexto {
+	display: none;
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+.barra:hover {
+	width: 14rem;
+}
+
+.barra .barraTudo li:last-child {
+	margin-top: auto;
+}
+
+.barra:hover .barraTudo .barraTexto {
+	display: inline;
+}
+
+.img{
+  height: 89px;
+  width:89px;
+  cursor: pointer;
+}
